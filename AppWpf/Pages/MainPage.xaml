@@ -1,0 +1,30 @@
+﻿<Page x:Class="AppWpf.Pages.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:AppWpf.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="MainPage" Background="Azure">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Orientation="Horizontal" Width="800" Height="60" HorizontalAlignment="Center" VerticalAlignment="Top" Background="Aqua">
+            <Image Source="C:\Users\Николай\source\repos\AppWpf\AppWpf\Images\kino.jpg" Width="70" Height="60" Margin="12,1"/>
+        </StackPanel>
+        <StackPanel Grid.Row="1" Orientation="Vertical" HorizontalAlignment="Left" VerticalAlignment="Top">
+            <StackPanel Orientation="Vertical">
+                <Button x:Name="order_button" Content="Заказ" Margin="5" Background="Aqua" Width="100" Height="45" Click="order_button_Click"/>
+                <Button x:Name="product_button" Content="Продукты"  Background="Aqua" Width="100" Height="45" Click="product_button_Click"/>
+            </StackPanel>
+            <StackPanel>
+                <Button x:Name="user_button" Content="Пользователь" Background="Aqua" Margin="5" Width="100" Height="45" Click="user_button_Click"/>
+                <Button x:Name="role_button" Content="Роль"  Background="Aqua" Width="100" Height="45" Click="role_button_Click"/>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Page>
