@@ -25,6 +25,7 @@ namespace AppWpf.Pages
             InitializeComponent();
             var product = DBContext.trade.Product.ToList();
             listProduct.ItemsSource = product;
+            //аыпкеркн
         }
     }
 }
